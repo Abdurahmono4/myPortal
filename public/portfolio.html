@@ -1,9 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/portfolio.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Portfolio</h1>
+      <a href="../index.html" class="home-btn"
+        ><i class="fas fa-home"></i> Bosh sahifa</a
+      >
+    </header>
+    <section class="portfolio">
+      <div class="portfolio-item">
+        <img src="../images/image.jpg" alt="Project 1" />
+        <div class="portfolio-info">
+          <h3>Project 1</h3>
+          <p>Project 1 description goes here.</p>
+          <div class="links">
+            <a href="https://github.com/username/project1" target="_blank"
+              >GitHub</a
+            >
+            <a href="https://project1.vercel.app" target="_blank">Vercel</a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="../images/image2.jpg" alt="Project 2" />
+        <div class="portfolio-info">
+          <h3>Project 2</h3>
+          <p>Project 2 description goes here.</p>
+          <div class="links">
+            <a href="https://github.com/username/project2" target="_blank"
+              >GitHub</a
+            >
+            <a href="https://project2.vercel.app" target="_blank">Vercel</a>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="../images/image5.jpg" alt="Project 3" />
+        <div class="portfolio-info">
+          <h3>Project 3</h3>
+          <p>Project 3 description goes here.</p>
+          <div class="links">
+            <a href="https://github.com/username/project3" target="_blank"
+              >GitHub</a
+            >
+            <a href="https://project3.vercel.app" target="_blank">Vercel</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more portfolio items as needed -->
+    </section>
+    <section class="add-project">
+      <h2>Yangi Loyiha Qo'shish</h2>
+      <form id="project-form">
+        <div class="form-group">
+          <input
+            type="text"
+            id="project-title"
+            placeholder="Loyiha nomi"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="project-description"
+            placeholder="Loyiha tavsifi"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="url"
+            id="project-github"
+            placeholder="GitHub linki"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="url"
+            id="project-vercel"
+            placeholder="Vercel linki"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="url"
+            id="project-image"
+            placeholder="Rasm linki"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-btn">Qo'shish</button>
+      </form>
+    </section>
+
+    <script src="../js/portfolio.js"></script>
+  </body>
 </html>
